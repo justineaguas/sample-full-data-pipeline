@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thinking Machines</title>
+</head>
+<body>
+  <h1>DE Exam</h1>
+  <form method="POST">
+  	Enter User:
+  	&nbsp; <select name="listname">
+  		   <option value=""> SELECT USER </option>
+  		   {% for value in distuser %}
+  		   <option value="{{ value }}"> {{ value }} </option>
+  		   {% endfor %}
+  		   </select>
+    &nbsp; <input type="submit" value="Submit" />
+  </form>
+<br />
+{{ data|safe }}
+</body>
+</html>
